@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation){
+                case "add":
+                return(arg1 + arg2);
+                break;
+                case "sub":
+                return(arg1 - arg2);
+                break;
+                case "div":
+                return(arg1 / arg2);
+                break;
+                case "mult":
+                return(arg1 * arg2);
+                break;
+                default:
+                return ("wrong paramenter");
+            };
+        };
+        
+        let a = 6;
+        let b = 3;
+        console.log(mathOperation(a, b, "add")); 
+        console.log(mathOperation(a, b, "sub")); 
+        console.log(mathOperation(a, b, "div")); 
+        console.log(mathOperation(a, b, "mult")); 
+        console.log(mathOperation(a, b, "tratata")); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let a = 2;
+        let x  = 1 + (a *= 2);
+        /*
+        “ут все пон€тно - сначала a умножаетс€ на 2, и сохран€етс€ новое значение 4.
+        Ќе очень пон€тно, почему без скобок не работает.
+        Ќаверное, проблема интерпретатора.
+        */
+        console.log(a); //4
+        console.log(x); //5
+    </script>
+</body>
+</html>

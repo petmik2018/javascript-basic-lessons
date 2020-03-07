@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        function makeTheWord(symbol) {
+            switch (symbol){
+                case "1":
+                return("рубль");
+                break;
+                case "2":
+                return("рубля");
+                break;
+                case "3":
+                return("рубля");
+                break;
+                case "4":
+                return("рубля");
+                break;
+                default:
+                return("рублей");                
+            }
+        };
+        
+        let amount = prompt("Введите сумму: ");
+        length = amount.length;
+        let sym = amount.charAt(length - 1);
+        alert(`Ваша сумма в ${amount} ${makeTheWord(sym)} спешно зачислена.`);
+    </script>
+</body>
+</html>
